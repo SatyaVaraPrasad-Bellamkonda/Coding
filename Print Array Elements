@@ -1,2 +1,49 @@
 PRINT ARRAY ELEMENTS USING DIFFERENT CODING LANGUAGES:
 
+C PROGRAMMING:
+#include <stdio.h>  
+void main() {  
+   int Arr[5] = {18, 30, 15, 70, 12};  
+int i;  
+   printf("Elements of the array are:\n");  
+   for(i = 0; i<5; i++) {  
+      printf("Arr[%d] = %d,  ", i, Arr[i]);  
+   }  
+}  
+
+
+
+JAVA :
+class ArrayElementsPrint {
+    public static void main(String[] args) {
+        int[] arr={1,2,3,4,5};
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+        
+        for(int num:arr){
+            System.out.println(num);
+        }
+    }
+}
+
+
+
+PYTHON:
+arr = [1, 2, 3, 4, 5]
+
+for element in arr:
+    print(element);
+
+
+
+JAVA STREAMS:
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        
+        Arrays.stream(arr).forEach(System.out::println);
+    }
+}
